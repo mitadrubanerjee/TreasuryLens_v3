@@ -650,8 +650,8 @@ def main():
     # ── CURRENCY PAIR SENTIMENT ──────────────────
     pair = st.selectbox("Select Currency Pair to Analyze:", [
         "EUR/USD", "EUR/GBP", "USD/GBP", "EUR/JPY", "EUR/AUD",
-        "EUR/CAD", "EUR/INR", "USD/CNH", "EUR/CHF", "EUR/NOK",
-        "USD/SEK", "EUR/NZD", "EUR/SGD"
+        "EUR/CAD", "EUR/INR", "USD/CNH", "EUR/CHF", "EUR/NOK", 
+        "EUR/NZD"
     ])
 
     if st.button("Analyze This Pair"):
