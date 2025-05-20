@@ -524,17 +524,15 @@ def render_news_links(news_items: List[Dict]):
 
     for item in news_items:
         title = item.get("title", "")
-        desc = item.get("description", "")
         source = item.get("source", "")
         url = item.get("url", "#")
 
         st.markdown(
-            f"- **[{title}]({url})** — *{source}*  \n  {desc}",
+            f"- **[{title}]({url})** — *{source}*",
             unsafe_allow_html=True
         )
 
     st.markdown("</div>", unsafe_allow_html=True)
-
 
 
 # ── Main App ──────────────────────────────────────────────
